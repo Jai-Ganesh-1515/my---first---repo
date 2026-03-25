@@ -1,0 +1,83 @@
+#include <stdio.h>
+int main()
+{
+    int month,year,days;
+    scanf("%d",&month);
+    if (month<1 || month>12){
+        printf("Invalid Month");
+        return 0;
+    }
+    switch(month){
+        case 1:
+           printf("January\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        case 2:
+            scanf("%d",&year);
+            printf("February\n");
+            if (year%4==0 && year%100!=0 || year%400==0){
+               days=29; 
+            }
+            else{
+                days=28;
+            }
+            printf("Number of days:%d",days);
+            break;
+        case 3:
+           printf("March\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        case 4:
+           printf("April\n");
+           days=30;
+           printf("Number of days:%d",days);
+           break;
+        case 5:
+           printf("May\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        case 6:
+           printf("June\n");
+           days=30;
+           printf("Number of days:%d",days);
+           break;
+        case 7:
+           printf("July\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        case 8:
+           printf("August\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        case 9:
+           printf("September\n");
+           days=30;
+           printf("Number of days:%d",days);
+           break;
+        case 10:
+           printf("October\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        case 11:
+           printf("November\n");
+           days=30;
+           printf("Number of days:%d",days);
+           break;
+        case 12:
+           printf("December\n");
+           days=31;
+           printf("Number of days:%d",days);
+           break;
+        default:
+           printf("Invalid Input!");
+           break;
+        
+    }
+    return 0;
+}
